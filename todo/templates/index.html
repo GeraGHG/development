@@ -3,6 +3,10 @@
 <h1>Temas</h1>
 <hr>
 <ul>
-    <a href="{% url "animation:softwareanimation" %}"><li>Los mejores programas de animación 2D GRATIS 2024</li></a>
+    <a href="{% url "animation:animationthemes" %}"><li>Temas de animación</li></a>
+    <ul>
+        <a href="{% url "animation:softwareanimationfree" %}"><li>Los mejores programas de animación 2D GRATIS 2024</li></a>
+        <a href="{% url "animation:softwareanimationpay" %}"><li>Los mejores programas de animación 2D PAGO 2024</li></a>
+    </ul>
 </ul>
 {% endblock %}
