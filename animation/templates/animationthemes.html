@@ -2,4 +2,23 @@
 
 {% block content %}
 <h1>Temas de animación</h1>
+{% for topic in topics %}
+<div class="p-3">
+    <div class="card card-body bg-black">
+        <div class="row">
+            <div class="col-3">
+                <img src="{{ topic.image.url }}" alt='Image {{ topic.title }}' class="img-fluid">
+    
+            </div>
+            <div class="col-9">
+                <h2>{{ topic.title }}</h2>
+                <p>{{ topic.date|date:'M d Y'|upper }}</p>
+                <p>{{ topic.description|striptags|truncatechars:200 }}</p>
+                <br></br>
+                <a href="{% url "blog:topic_details" topic.id %}" class="btn btn-primary">{{ topic.title }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
 {% endblock %}
