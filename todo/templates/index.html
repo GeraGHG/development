@@ -1,12 +1,16 @@
 {% extends "layout.html" %} 
 {% block content %}
-<h1>Temas</h1>
+<h1>Anime y animación</h1>
 <hr>
-<ul>
-    <a href="{% url "animation:animationthemes" %}"><li>Temas de animación</li></a>
+<h2>Índice</h2>
+<ul> 
+    <a href="{% url "animation:animationthemes" %}"><li>Temas de anime</li></a>
     <ul>
-        <a href="{% url "animation:softwareanimationfree" %}"><li>Los mejores programas de animación 2D GRATIS 2024</li></a>
-        <a href="{% url "animation:softwareanimationpay" %}"><li>Los mejores programas de animación 2D PAGO 2024</li></a>
+        <ul>
+            <li>~ Otros temas relacionados al anime ~</li>
+            <a href="{% url "animation:softwareanimationfree" %}"><li>Los mejores programas de animación 2D "GRATIS" 2024</li></a>
+            <a href="{% url "animation:softwareanimationpay" %}"><li>Los mejores programas de animación 2D "PAGO" 2024</li></a>
+        </ul>
     </ul>
 </ul>
 {% endblock %}
