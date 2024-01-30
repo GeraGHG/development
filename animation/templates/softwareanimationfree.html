@@ -1,11 +1,14 @@
 {% extends "base.html" %} 
+{% load static %}
 
 {% block content %}
 <h1>Los mejores programas de animación 2D GRATIS 2024</h1>
 <p>Febrero 01, 2024 / Ing. Data Scientist Gerardo Hernández González</p>
-<p>Tema que te puede interesar: <a href="{% url 'animation:softwareanimationpay' %}">Los mejores programas de animación 2D "PAGO" 2024</a></p>
+<p>Tema que te puede interesar:</p>
+<a href="{% url 'animation:softwareanimationpay' %}" target="_blank">Los mejores programas de animación 2D "PAGO" 2024</a>
+<p></p>
 <nav>
-    <p>Contenido:</p>
+   Contenido:
     <ul>
         <li><a href="#pencil2d">Pencil2D</a></li>
         <ul>
@@ -22,6 +25,7 @@
             <li><a href="#blender-caracteristicas">Características</a></li>
             <li><a href="#blender-ventajas-desventajas">Ventajas y desventajas</a></li>
         </ul>
+        <li><a href="#opentoonz">OpenToonz</a></li> <!-- Completar -->
     </ul>
 </nav>
 
@@ -31,13 +35,13 @@
             <h2>Pencil2D</h2>
             <img src="https://www.pencil2d.org/images/pencil2d_horizontal_banner_1024x256_trans.png" alt="pencil2d">
             <p>Al momento de buscar un software que nos permita crear un diseño sencillo y rápido para el usuario, si estás iniciando o ya cuentas con algo de experiencia en la animación, este programa será muy cómodo para utilizar.</p>
-            <p><b>Página oficial para descargar Pencil2D:</b> <a href="https://www.pencil2d.org/download/">https://www.pencil2d.org/download/</a></p>
+            <p><b>Página oficial para descargar Pencil2D:</b> <a href="https://www.pencil2d.org/download/" target="_blank">https://www.pencil2d.org/download/</a></p>
     </sectio>
     <section id="pencil2d-caracteristicas">
         <!-- Contenido de Características -->
         <h4>Características de Pencil2D</h4>
             <ul>
-                <li>Herramienta como tal es multiplataforma (<b>Windows, Mac OS, Linux y FreeBSD</b>)</li>
+                <li>Herramienta como tal es multiplataforma (<b>Windows, Mac OS, Linux y FreeBSD</b>).</li>
                 <li>Admite gráficos de mapa de bits y vectoriales.</li>
                 <img src="https://myk.graphics/wp-content/uploads/2023/08/diferencia-imagen-vectorial-bit-map.jpg" alt="vector y pixel map" width="300px">
                 <p>Recomiendo la página: <a href="https://myk.graphics/imagen-vectorial-y-mapa-de-bits-comprendiendo-las-diferencias/" target="_blank">Imagen Vectorial y Mapa de Bits: Comprendiendo las Diferencias</a> by MYK, un diseñador UX/UI talentoso tiene otros temas interesantes en su blog.</p>
@@ -66,12 +70,12 @@
         <h2>Krita</h2>
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Calligrakrita-base.svg" alt="Krita logo" width="500px">
         <p>Es un programa muy versatil en su aprendizaje con un enfoque más profesional para la animación de código abierto, significa que sus licencias son de libre uso.</p>
-        <p><b>Página oficial para descargar Krita:</b> <a href="https://krita.org/es/descargar/krita-desktop-es/">https://krita.org/es/descargar/krita-desktop-es/</a></p>
+        <p><b>Página oficial para descargar Krita:</b> <a href="https://krita.org/es/descargar/krita-desktop-es/" target="_blank">https://krita.org/es/descargar/krita-desktop-es/</a></p>
     </section>
     <section id="krita-carateristicas">
         <h4>Características de Krita</h4>
         <ul>
-            <li>Multiplataforma (<b>Windows, Mac OS y Linux</b>)</li>
+            <li>Multiplataforma (<b>Windows, Mac OS y Linux</b>).</li>
             <li>Máscaras de coloración y herencia alfa.</li>
             <img src="https://docs.krita.org/en/_images/Composition_animation.gif" alt="herencia alpha gif" width="300px">
             <li>Puedes importar paquetes para personalizar pinceles y agregar más paletas de colores a las que hay por defecto.</li>
@@ -98,13 +102,33 @@
     <section id="blender">
         <h2>Blender</h2>
         <img src="https://download.blender.org/branding/blender_logo.png" alt="blender logo" width="1000px">
-        <p><b>Página oficial para descargar Blender:</b> <a href="https://www.blender.org/download/">https://www.blender.org/download/</a></p>
-
+        <p>Blender es muy popular entre los usuarios que se dedican al modelado 2D y 3D ya sea de escenarios, elementos u objetos. Tiene bastantes años liderando como el software preferido por profesionales, creando una comunidad gigantesca, agregado características para que la experiencia en la creación de un proyecto muy satifactoría.</p>        
+        <p><b>Página oficial para descargar Blender:</b> <a href="https://www.blender.org/download/" target="_blank">https://www.blender.org/download/</a></p>
     </section>
     <section id="blender-caracteristicas">
         <h4>Características</h4>
+        <ul>
+            <li>Multiplataforma (<b>Linux, macOS y Windows</b>)</li>
+            <li>Se que animación 2D es el principal fuerte del programa, pero también la animación 3D es exelente, intercalando entre estás dos formas de diseño.</li>
+            <li>Dentro encontraras una herramienta "motor interno de videojuegos", por si quieres llevar al siguiente nivel tus animaciones.</li>
+            <li>Algo interesante en su página web donde podras ver toda su documentación, se encuentra una parte en español, lo cual facilitara las cosas cuando quieras implementar funciones muy especificas en tus modelados.</li>
+        </ul>
     </section>
-
+    <section id="blender-ventajas-desventajas">
+        <h4>Ventajas y Desventajas</h4>
+        <ul>
+            <b>Ventajas</b>
+            <li>Tiene exelente documentación y una grana comunidad que lo respalda.</li>
+            <li>Gran variedad de opciones.</li>
+            <li>Incluye su propio motor de videojuegos.</li>
+        </ul>
+        <ul>
+            <b>Desventajas</b>
+            <li>Puede ser complejo la configuración en un desarrollo muy especializado (sobre todo el 3D).</li>
+            <li>La curva de aprendizaje puede ser más tartado que los anteriores programas, pero las habilidades desarrolladas se pueden popalizar a otros programas de animación muy fácil.</li>
+        </ul>
+    </section>
+    
 </article>
 
 <footer>

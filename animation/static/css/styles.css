@@ -1,0 +1,30 @@
+body {
+    margin: auto;
+    width: 640px; 
+    padding: 50px;
+    font-family: 'Arial', sans-serif; 
+    color: black;    
+  }
+  
+  /* Centered Image Code */
+  
+  img {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+  /* styles.css */
+  
+nav {
+    background-color: whitesmoke; /* Color de fondo del menú */
+    padding: 20px; /* Espaciado interno del menú */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 1px 10px; /* Espaciado interno de los enlaces */
+}
+nav ul li a:hover {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+}
