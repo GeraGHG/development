@@ -4,13 +4,14 @@
 body {
   background-color: wheat;
   margin: auto;
-  text-align: center;
   width: 640px;
   padding: 50px;
   font-family: 'Arial', sans-serif;
   color: black;
 }
-
+h2 {
+  color:#0056b3;
+}
 /* Estilos para las imágenes centradas */
 img {
   display: block;
@@ -25,7 +26,6 @@ nav {
 }
 
 nav ul li {
-  display: inline; /* Mantiene los elementos de la lista en línea */
   margin-right: 15px; /* Espaciado entre elementos de la lista */
 }
 
